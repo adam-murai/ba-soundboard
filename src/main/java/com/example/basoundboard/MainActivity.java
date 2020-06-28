@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 
 public class MainActivity extends AppCompatActivity {
 
+    // BRANCH TEST
     private FragmentManager fm;
     private NoScrollPager pager;
     private Typeface futura;
