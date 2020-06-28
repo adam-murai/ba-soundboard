@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <!--
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="-2dp" > -->
+    <LinearLayout
+        android:id="@+id/sound_buttons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+    </ScrollView>
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

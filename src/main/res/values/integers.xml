@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Constants (Should definitely be in styles somehow) -->
+    <integer name="grid_margin">4</integer>
+
+</resources>
