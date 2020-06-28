@@ -30,6 +30,7 @@ public class MainFragment extends Fragment {
         // Brad
         BAButton bradButton = new BAButton((MainActivity)this.getContext(), 1, R.drawable.brad_icon);
         row1.addView(bradButton);
+        // Claire
         BAButton claireButton = new BAButton((MainActivity)this.getContext(), 2, R.drawable.claire_icon);
         row1.addView(claireButton);
         buttonGrid.addView(row1);

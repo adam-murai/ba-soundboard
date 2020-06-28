@@ -4,15 +4,16 @@ import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.FragmentManager;
 
 public class MainActivity extends AppCompatActivity {
 
-    // BRANCH TEST
     private FragmentManager fm;
     private NoScrollPager pager;
     private Typeface futura;
@@ -25,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
         futura = ResourcesCompat.getFont(this, R.font.futura_medium_bt);
         pager = (NoScrollPager)findViewById(R.id.pager);
         setupPager(pager);
+
+        // Show icon on Action Bar
+        ActionBar actionBar = getSupportActionBar();
+        View customActionBar = getLayoutInflater().inflate(R.layout.custom_action_bar, null);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setCustomView(customActionBar);
+        // Remove app title from Action Bar
+        actionBar.setDisplayShowTitleEnabled(false);
     }
 
     // Attaches our adapter to the viewpager on the main activity
